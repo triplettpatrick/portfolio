@@ -1,0 +1,435 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: "Nunito", serif;
+    font-size: 20px;
+}
+
+/* Header  */
+
+li, a, button {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10%;
+    background-color: #b1f8ff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    transition: 0.6s;
+}
+
+header .logo {
+    width: 20%;
+    position: relative;
+    font-weight: 700;
+    color: #66BFBF;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    transition: 0.6s;
+}
+
+header.sticky {
+    padding: 10px 10%;
+    background: #000; 
+}
+
+nav {
+    width: 100%;
+}
+
+.links {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links li {
+    position: relative;
+    list-style: none;
+}
+
+.links li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #66BFBF;
+    font-size: 1.5rem;
+    font-weight: 500px;
+    transition: 0.6s;
+    /* transition: all 0.3s ease-in 0s; */
+}
+
+.links li a:hover {
+    color: #11999E;
+}
+
+.start  {
+    margin-left: 25%;
+}
+
+button {
+    padding: 9px 25px;
+    background-color: rgba(79, 168, 171, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+button:hover {
+    background-color: rgba(79, 168, 171, 0.6);
+}
+
+/* Top Container  */
+
+h1 {
+    font-size: 5.625rem;
+    margin: 50px auto 0 auto;
+    font-family: "Sacramento", cursive;
+    color: #66BFBF;
+    line-height: 2;
+    width: 100%;
+}
+
+.arrow {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+}
+
+.arrow span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #b1f8ff;
+    border-right: 5px solid #b1f8ff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+.profile-img {
+    border-radius: 20%;
+}
+
+.projects {
+    color: #fff;
+    padding-top: 60px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif; 
+    color: #b1f8ff;
+    font-weight: normal;
+}
+
+.h2-contact {
+    color:rgb(79, 168, 171);
+}
+
+
+
+.web-developer {
+    color: #66BFBF;
+
+}
+
+h3 {
+    font-family: "Montserrat", sans-serif; 
+    color: #11999E;
+}
+
+hr {
+    width: 10%;
+    border: none;
+    border-top: 10px dotted black;
+    border-color: #ccc;
+
+}
+
+@media (max-width: 960px) {
+    .skill-row img {
+        display: none;
+    }
+}
+
+.top-container {
+    background-color: #b1f8ff;
+    position: relative;
+    padding-top: 100px;
+    height: 80vh;
+}
+
+
+.half-background {
+    position: absolute;
+    height: 52%;
+    width: 100vw;
+    background-color: #66BFBF;
+    padding-top: 2%;
+}
+
+/* .top-cloud {
+    position: absolute; 
+    right: 300px;
+    top: 50px;
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+} */
+
+/* Middle Container  */
+
+.profile {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 100vh;
+}
+
+.profile img {
+    height: 600px;
+    width: 425px;
+    margin-left: 25%;
+}
+
+.profile h2 {
+    vertical-align: center;
+}
+
+.intro-description {
+    width: 50%;
+    margin: auto auto 50px auto;
+}
+
+.skills {
+    height: 100vh;
+}
+
+.skills-table {
+    margin: 0 auto;
+}
+
+.row-1, .row-2 {
+    display: inline-block;
+    margin: 0 2%;
+}
+
+.hr-line {
+    margin: 10 auto auto auto;
+}
+
+a {
+    color: #66BFBF;
+    border-radius: 8;
+    border: none;
+    background-color: linear-gradient(#11cdd4, #11999e);
+    text-decoration: none;
+}
+
+.btn {
+    background: #11cdd4;
+    background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+    background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+    background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border: none;
+}
+  
+.btn:hover {
+    background: #30e3cb;
+    background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+    background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+    text-decoration: none;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.project-section {
+    background-color:#fff;
+}
+
+.img-wrap {
+    position: relative;
+    height: 45vh;
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+.img-fill {
+    position: absolute;
+    height: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(250, 250, 250, 1);
+    visibility: hidden;
+    opacity: 0;
+    padding-top: 160px;
+
+}
+
+.img-wrap:hover .img-fill {
+    visibility: visible;
+    opacity:  0.9;
+    transition: all 0.3s ease-in;
+}
+
+#banner1{
+    position: absolute;
+    background-image: url(tindog-1.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 45vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    display: block;
+}
+
+#banner2{
+    position: absolute;
+    background-image: url(monogram-mock.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 45vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    display: block;
+}
+
+#banner3{
+    position: absolute;
+    background-image: url(ableton-proof-3.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 45vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    display: block;
+}
+
+#banner4 {
+    position: absolute;
+    background-image: url(flex-gallery.jpg);
+    background-size: 100%;
+    width: 100%;
+    height: 45vh;
+    background-repeat: no-repeat;
+    position: relative;
+    background-position: center;
+    display: block;
+}
+
+.project-anchor {
+    color: black;
+    font-size: 2rem;
+}
+
+.project-anchor:hover {
+    text-decoration: underline;
+}
+
+.skill-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    line-height: 2;
+}
+
+.projects {
+    margin: 5% 0;
+    color: #66BFBF; 
+}
+
+/* Contact Me */
+
+#contact-me {
+    position: relative;
+    height: 45vh;
+    width: 100vw;
+}
+
+.available {
+    margin-bottom: 40px;
+}
+
+.project {
+    width: 40%;
+    margin: auto auto 40px auto;
+}
+
+.get-in-touch {
+    color:rgba(79, 168, 171);
+}
+
+/* Bottom Container  */
+
+.bottom-container {
+    margin: 50px auto auto auto;
+    background-color: #66BFBF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+
+.footer-link {
+    color: black;
+    display: inline-block;
+    margin: auto 20px;
+    margin-bottom: 20px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+    
+}
