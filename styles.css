@@ -108,25 +108,7 @@ div.navbar a:before {
 }
 
 .home-section .home-text {
-    /* position: absolute; */
     text-align: center;
-    margin: 0 auto;
-    border: 2px solid red;
-    /* top: 10%; */
-    /* left: 20%; */
-    /* margin-top: 50px; */
-    /* margin-top: 50px;
-    margin-left: -50px;
-    height: 40rem;
-    width: 70rem; */
-    /* border: 2px solid red; */
-    left: 10%;
-    transform: translateX(-10%);
-    /* color: #ffffff;
-    text-align: center; */
-    /* border-style: solid;
-    border-width: 5px;
-    border-color: red; */
 }
 
 .home-section .home-text h1 {
@@ -134,7 +116,7 @@ div.navbar a:before {
     font-style: italic;
     color: #fff;
     text-transform: uppercase;
-    font-size: 10rem;
+    font-size: 10vw;
     /* font-weight:  */
     transition: all 0.5s;
     -webkit-text-fill-color: #10101a;
@@ -168,59 +150,6 @@ div.navbar a:before {
     right: 435px;
     color: #ffffff;
 }
-
-
-/* .home-text p {
-    color: #ffffff;
-    text-align: left;
-    font-size: 25px;
-    font-weight: 500px;
-    margin: 0 0 20px;
-    line-height: 1;
-    font-family: "Roboto", sans-serif;
-    line-height: 2rem;
-    margin-bottom: 1.5rem;
-} */
-
-/* .home-text h1 {
-    color: #ffffff;
-    text-align: left;
-    font-family: "Bodoni Moda", sans-serif;
-    font-size: 8rem;
-    margin: 0 0 10px;
-    top: 200px;
-} */
-
-/* .arrow {
-    position: absolute;
-    top: 80%;
-    right: 200px;
-    transform: translate(-50%, -80%);
-} */
-
-/* .arrow span {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid #ffffff;
-    border-right: 5px solid #ffffff;
-    transform: rotate(45deg);
-    margin-top: 60px;
-    animation: animate 2s infinite;
-} */
-
-/* @keyframes animate {
-    0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: rotate(45deg) translate(20px, 20px);
-    }
-} */
 
 /* About Section  */
 
@@ -474,25 +403,10 @@ form .send-btn:hover {
         position: relative;
         display: flex;
     }
-    
-    section {
-        /* padding: 120px 14%; */
-        
-    }
 
     .logo {
         font-size: 2rem;
     }
-
-    .home-text {
-       /* top: 10%; */
-       /* margin-top: 50%; */
-    }
-
-    /* .home-text h1 {
-        padding: 17px 3%; 
-        font-size: 7rem;
-    } */
 
     .home-text p {
         font-size: 1.4rem;
@@ -500,9 +414,9 @@ form .send-btn:hover {
         padding-right: 14%;
     }
 
-    .about-section {
+    /* .about-section {
         height: 35vh;
-    }
+    } */
 
     .projects-section {
         height: 100vh;
@@ -510,46 +424,33 @@ form .send-btn:hover {
 
 }
 
-@media (max-width: 1230px) {
-    /* .home-section .img-container img {
-        height: 450px;
-        width: 500px;
-        margin-top: 100px;
-    } */
-
-    
-}
-
-@media (max-width: 1040px) {
-    .home-section .img-container img {
-        /* height: 350px;
-        width: 350px;
-        margin-top: 100px; */
+/* @media (max-width: 1410px) {
+    .home-section .home-text h1 {
         display: none;
     }
+} */
 
-    .home-section {
-        background-image: url(images/pexels-francesco-ungaro-998641.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+@media (max-width: 1120px) {
+    .home-section .home-text {
+        font-size: 6rem;
+    } 
 }
 
 @media (max-width: 1020px) {
-    .home-section {
+    /* .home-section {
         height: 80vh;
-    }
-    .home-text {
+    } */
+    /* .home-text {
         margin: auto 0;
-    }
+    } */
 
-    .home-text h1 {
+    /* .home-text h1 {
         padding: 40px 3% 10px;
-    }
+    } */
 
-    .navbar a {
+    /* .navbar a {
         font-size: 14px;
-    }
+    } */
 
     /* .home-section .img-container img {
         display: none;
@@ -599,6 +500,7 @@ form .send-btn:hover {
         left: 0;
         right: 0;
         display: flex;
+        /* justify-content: space-between; */
         flex-direction: column;
         background: #10101a;
         text-align: left;
