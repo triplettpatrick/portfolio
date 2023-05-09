@@ -103,38 +103,24 @@ div.navbar a:before {
 .home-section {
     height: 100vh;
     width: 100%;
+    padding: 0; 
     position: relative;
     display: flex;
+    align-items: center;
 }
 
-.home-section .home-text {
+/* .home-section .home-text {
     text-align: center;
-}
+} */
 
-.home-section .home-text h1 {
+.home-section marquee {
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+    text-align: center;
     font-family: "Syncopate", serif;
-    font-style: italic;
     color: #fff;
-    text-transform: uppercase;
     font-size: 10vw;
-    /* font-weight:  */
-    transition: all 0.5s;
-    -webkit-text-fill-color: #10101a;
-    -webkit-text-stroke: 4px;
-    /* font-variation-settings: "wght" 900, "ital" 1; */
-    text-shadow: "Meta", sans-serif;
-    text-shadow: 10px 10px 0px #07bccc,
-      15px 15px 0px #e601c0,
-      20px 20px 0px #e9019a;
-      /* 25px 25px 0px #f40468; */
     
 }
-
-
-.home-section .home-text h1:hover {
-    font-variation-settings: "wght" 100, "ital" 0;
-    text-shadow: none;
-}  
 
 .home-section img {
     height: 500px;
@@ -154,12 +140,22 @@ div.navbar a:before {
 /* About Section  */
 
 .about-section {
-    height: 50vh;
+    height: 60vh;
     width: 100%;
+    padding: 0;
     background-color: #10101a;
     position: relative;
     display: flex;
-   
+    align-items: center;
+}
+
+.about-section marquee {
+    text-shadow: 0 13.36px 8.896px #c4b59d,0 -2px 1px #fff;
+    text-align: center;
+    font-family: "Syncopate", serif;
+    color: #fff;
+    font-size: 10vw;
+    
 }
 
 .about-text {
@@ -193,7 +189,7 @@ div.navbar a:before {
 .project-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(10, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     gap: 10px;
 }
 
@@ -204,50 +200,74 @@ div.navbar a:before {
 
 
 
-/* Grid Item 1  */
+/* Grid Items  */
 
 .grid-img {
-    height: 30vh;
+    height: 15vh;
     width: 100%;
+    background: #0b0b13;
     object-fit: cover;
     border: 7px solid #000000;
     margin: auto;
 }
 
 .grid-img-1 {
-    background-image: url(images/tindog-1.jpg);
-    background-size: cover;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 11;
     grid-row-start: 1;
-    grid-row-end: 6;
+    grid-row-end: 2;
+}
+
+div.text-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+h2.work-title {
+    transition: all 0.5s;
+    -webkit-text-stroke: 4px #d6f4f4;
+    font-variation-settings: "wght" 400, "ital" 1;
+    font-size: 3rem;
+    text-align: center;
+    color: transparent;
+    font-family: "Meta", sans-serif;
+    text-shadow: 10px 10px 0px #07bccc,
+        15px 15px 0px #e601c0,
+        20px 20px 0px #e9019a,
+        25px 25px 0px #f40468,
+        45px 45px 10px #482896;
+    cursor: pointer;
+}
+  
+h2.work-title:hover {
+    font-variation-settings: "wght" 100, "ital" 0;
+    text-shadow: none;
 }
 
 .grid-img-2 {
-    background-image: url(images/monogram-mock.jpg);
-    background-size: cover;
-    grid-column-start: 6;
+    grid-column-start: 1;
     grid-column-end: 11;
-    grid-row-start: 1;
-    grid-row-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .grid-img-3 {
-    background-image: url(images/flex-image-gallery.jpg);
-    background-size: cover;
     grid-column-start: 1;
-    grid-column-end: 6;
-    grid-row-start: 6;
-    grid-row-end: 11;
+    grid-column-end: 11;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
 .grid-img-4 {
-    background-image: url(images/sneakers.jpg);
-    background-size: cover;
-    grid-column-start: 6;
+    grid-column-start: 1;
     grid-column-end: 11;
-    grid-row-start: 6;
-    grid-row-end: 11;
+    grid-row-start: 4;
+    grid-row-end: 5;
 }
 
 /* Contact Section  */
